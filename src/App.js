@@ -32,7 +32,7 @@ function App() {
   };
 
   const fetchItems = async () => {
-    const result = await axios(`http://api.tvmaze.com/shows/431/cast`);
+    const result = await axios(`https://api.tvmaze.com/shows/431/cast`);
 
     console.log(result.data);
 
@@ -43,7 +43,7 @@ function App() {
   };
 
   const fetchItems2 = async () => {
-    const result2 = await axios(`http://api.tvmaze.com/shows/431`);
+    const result2 = await axios(`https://api.tvmaze.com/shows/431`);
 
     console.log(result2.data);
 
@@ -51,8 +51,8 @@ function App() {
     // setIsLoading(false);
   };
   const fetchItems3 = async () => {
-    const result3 = await axios(` http://api.tvmaze.com/shows/431/seasons`);
-    const result4 = await axios(`http://api.tvmaze.com/shows/431/episodes`);
+    const result3 = await axios(` https://api.tvmaze.com/shows/431/seasons`);
+    const result4 = await axios(`https://api.tvmaze.com/shows/431/episodes`);
 
     console.log(result3.data);
     console.log(result4.data);
